@@ -1,0 +1,28 @@
+/*
+This is the varibles page where all
+designs can be stylized and recompiled
+to propogate the awesome new designs
+to the whole page!!
+*/
+
+// Colors
+$main: #1786ED;
+$default: #F1F3F5;
+
+//Wrapper-Width
+$wrapper-width: 800px;
+
+// Styles
+$border: 1px solid rgba(0,0,0,.12);
+$border-radius: 2px;
+
+//Typography
+$header-color: #303E4B;
+$body-color: transparentize($header-color, .3);
+$margin-btm: 20px;
+
+  // Font Weights
+  $light: 300;
+  $normal: 400;
+  $semi-bold: 600;
+  $bold: 800;

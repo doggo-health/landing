@@ -1,0 +1,148 @@
+@import "varibles";
+
+//video
+iframe{
+  width: 380px;
+  height: .5625 * 380px;
+  margin: 0 auto;
+  margin-bottom: $margin-btm;
+}
+
+@media (max-width: 760px) {
+  iframe{
+    width: 280px;
+    height: .5625 * 280px;
+  }
+}
+
+//code editor
+.terminal{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid $default;
+  border-radius: $border-radius;
+  .t-header{
+    height: 24px;
+    background-color: $default;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .t-title{
+      margin: 0;
+      font-weight: $normal;
+      text-align: center;
+      padding-left: 100px;
+    }
+    .dot{
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    .d-red{
+      background-color: #FA3267;
+    }
+    .d-yellow{
+      background-color: #FFD10D;
+    }
+    .d-green{
+      background-color: #4AE14C;
+    }
+  }
+  .t-body{
+    padding: 14px 20px 100px 20px;
+    font-family: monaco;
+    font-size: 11px;
+    ol{
+      list-style: decimal;
+      color: #ccc;
+      padding: 0;
+      margin-left: 20px;
+    }
+    .code{
+      color: $header-color;
+    }
+    li{
+      margin-bottom: 8px;
+    }
+    .var{
+      color: #fa3267;
+    }
+    .fun{
+      color: rgb(0,255,171);
+    }
+  }
+}
+
+// footer
+.footer{
+  font-weight: $light;
+  .copy{
+    margin: 0;
+    font-size: 10px;
+  }
+}
+
+// Toolbox
+.toolbox{
+  width: 100%;
+  margin: 0 auto $margin-btm auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: $border-radius;
+  .tb-header{
+    display: flex;
+    i{
+      font-size: 13px;
+      margin-right: 8px;
+      color: rgba(0,0,0,.4);
+    }
+    h4{
+      margin: 0;
+      font-size: 12px;
+      font-weight: $semi-bold;
+      color: rgba(0,0,0,.4);
+    }
+    margin-bottom: 6px;
+  }
+  .tb-body{
+    p{
+      margin: none;
+      font-size: 11px;
+      font-weight: $normal;
+      line-height: 1.5;
+      color: rgba(0,0,0,.4);
+    }
+  }
+}
+
+.info{
+  border: 1px solid rgb(255,191,66);
+  background-color: transparentize(rgb(255,191,66), .7);
+}
+
+.error{
+  border: 1px solid rgb(255,66,106);
+  background-color: transparentize(rgb(255,66,106), .7);
+}
+
+.success{
+  border: 1px solid rgb(48,235,134);
+  background-color: transparentize(rgb(48,235,134), .7);
+}
+
+// Code Blocks Via Prism
+pre{
+  width: 100%;
+  margin: 0 auto 20px auto;
+  border-radius: $border-radius;
+  padding: 16px 22px;
+}

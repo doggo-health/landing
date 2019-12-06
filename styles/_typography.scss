@@ -1,0 +1,49 @@
+@import "varibles";
+
+body{
+  font-family: 'Open sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+  color: $header-color;
+  margin-bottom: $margin-btm;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: $bold;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: $semi-bold;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: $semi-bold;
+  margin-left: 30px;
+  color: transparentize($header-color, .2);
+}
+
+p{
+  color: $body-color;
+  margin-bottom: $margin-btm;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: $light;
+}
+
+.sub{
+  margin-left: 30px;
+}
+
+p:last-child{
+  margin: 0;
+}

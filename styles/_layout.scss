@@ -1,0 +1,58 @@
+@import "varibles";
+
+body{
+  padding: 60px;
+  background-color: #fff;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+// Main Wrapper
+.wrapper{
+  width: $wrapper-width;
+  margin: 0 auto;
+}
+
+.col-left{
+  width: 350px;
+  float: left;
+  position: fixed;
+  top: 60px;
+
+    .footer{
+      position: fixed;
+      bottom: 60px;
+    }
+}
+
+.col-right{
+  width: 380px;
+  padding-top: 104px;
+  padding-bottom: 60px;
+  float: right;
+}
+
+@media (max-width: 760px) {
+  .wrapper{
+    width: 100%;
+    transition: 1s;
+  }
+  .col-left{
+    width: 100%;
+    clear: both;
+    position: static;
+    transition: 1s;
+    .footer{
+      position: static;
+      transition: 1s;
+    }
+  }
+  .col-right{
+    width: 100%;
+    clear: both;
+    transition: 1s;
+    padding-top: 40px;
+  }
+}
